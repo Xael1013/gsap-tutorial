@@ -47,7 +47,7 @@ const Hero = () => {
             scrub: true,
           },
         })
-        .to(".right-lemon", { y: 200 }, 0)
+        .to(".right-leaf", { y: 200 }, 0)
         .to(".left-leaf", { y: -200 }, 0);
 
         const startValue = isMobile ? "top 50%" : "center 60%";
@@ -70,14 +70,11 @@ const Hero = () => {
 	};
  }, []);
  
-        
-	
-
-
   return (
     <div ref={heroRef} className="relative">
-      <section id="hero" className="noisy relative">
-        <h1 className="title">Tequila</h1>
+      <section id="hero" className="noisy relative font-retro">
+        <h1 className="title neon-hero font-retro">Bolthole</h1>
+
 
         <img
           src="/images/hero-left-leaf.png"
@@ -86,9 +83,9 @@ const Hero = () => {
         />
 
         <img
-          src="/images/hero-right-lemon.png"
-          alt="right-lemon"
-          className="right-lemon"
+          src="/images/hero-right-leaf.png"
+          alt="right-leaf"
+          className="right-leaf"
         />
 
         <div className="body">
@@ -107,7 +104,7 @@ const Hero = () => {
                 Whether you’re unwinding after a long day or celebrating with
                 friends, each glass is made to elevate the moment.
               </p>
-              <a href="/cocktails">View Cocktails</a>
+              <a href="#cocktails">View Cocktails</a>
             </div>
           </div>
         </div>
